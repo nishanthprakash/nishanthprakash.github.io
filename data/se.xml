@@ -1,0 +1,4 @@
+This is basically a trip organizer web mash up application that has features and functions that allow users to view information on a location for the purpose of organizing a trip. It is rendered intelligent using recommender system that recommends user locations based on his browsing data and summarizers which summarize reviews on a location. It uses 9 APIs like Google Maps, Freebase, Wolfram Alpha, etc. The server-side is coded in PHP.  The frontend used javascript and Bootstrap CSS framework for styling.<br><br>
+
+Here's a link to the website: <a href="www.trippin.in" target="_blank"> Trippin! </a>
+

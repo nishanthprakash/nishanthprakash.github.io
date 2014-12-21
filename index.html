@@ -1,0 +1,383 @@
+<html>
+<head>
+<title>Nishanth Prakash</title>
+
+<script id="shader-vs" type="x-shader/x-vertex"> 
+attribute vec3 vPos;
+
+void main(void) 
+{
+   gl_Position = vec4(vPos, 1.);
+}
+</script> 
+ 
+<script id="shader-fs" type="x-shader/x-fragment"> 
+
+precision highp float;
+
+uniform vec2 ComplexConstant;
+uniform float fViewportSize;
+uniform float blend;
+  
+void main(void) 
+{
+   const int nMaxIter = 128;
+   
+   float R = 3.5 * (gl_FragCoord.x - fViewportSize / 2.0)  / fViewportSize - 0.25;
+   float I = 3.5 * (gl_FragCoord.y - fViewportSize / 2.0)  / fViewportSize;
+   
+   
+   float Real0 = R;
+   float Imag0 = I;
+   
+   int LastIter;
+   float fRealConstant = blend * ComplexConstant.x + (1.0 - blend ) * Real0;
+   float fImagConstant = blend * ComplexConstant.y + (1.0 - blend ) * Imag0;
+   
+   float R2 = R*R; 
+   float I2 = I*I;
+   
+   for(int iter = 0; iter < nMaxIter; iter ++)
+   {
+		I=(R+R)*I + fImagConstant;
+		R=R2-I2 + fRealConstant;
+			
+		R2=R*R;
+		I2=I*I;
+		
+		LastIter = iter ;
+
+		if( R2+I2 > 4.0 ) 
+			break;
+	}
+	
+   if (LastIter  == nMaxIter-1) 
+		gl_FragColor = vec4(1.,1., 1., 1.);
+   else
+   {
+    float fValue = mod(float(LastIter),2.0);
+	float angle = 2.0 * 3.14 * float(LastIter) / float(nMaxIter) ;
+	gl_FragColor = vec4((0.5+0.5*cos(angle*2.0)),
+						 (0.5+0.5*cos(angle*3.0)),
+						(0.5+0.5*cos(angle*5.0)), 
+						1.);
+   }
+}
+</script> 
+ 
+<script type="text/javascript"> 
+function getShader ( gl, id )
+{
+   var shaderScript = document.getElementById ( id );
+   var str = "";
+   var k = shaderScript.firstChild;
+   while ( k )
+   {
+     if ( k.nodeType == 3 ) str += k.textContent;
+     k = k.nextSibling;
+   }
+   var shader;
+   if ( shaderScript.type == "x-shader/x-fragment" )
+           shader = gl.createShader ( gl.FRAGMENT_SHADER );
+   else 
+	if ( shaderScript.type == "x-shader/x-vertex" )
+           shader = gl.createShader(gl.VERTEX_SHADER);
+   else 
+	return null;
+   gl.shaderSource(shader, str);
+   gl.compileShader(shader);
+   if (gl.getShaderParameter(shader, gl.COMPILE_STATUS) == 0)
+      alert(gl.getShaderInfoLog(shader));
+   return shader;
+}
+
+requestAnimFrame = function()
+{
+  return  window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function(callback, element){ window.setTimeout(callback, 1000 / 60); }
+}();
+
+var gl, canvas;
+var cLoc, size, frames = 0, timer_fr, time, BlendLoc, Blend,ViewportSizeLoc;
+
+function Init() 
+{
+	
+	makeGetRequest('ab');
+   canvas = document.getElementById("canvas");
+   size = Math.min(window.innerWidth, window.innerHeight) - 35;
+   canvas.width =  size;   canvas.height = size;
+   if (!window.WebGLRenderingContext)
+   {
+     alert("Your browser does not support WebGL. See http://get.webgl.org");
+     return;
+	}
+  
+  try  { 
+	gl = canvas.getContext("experimental-webgl");
+	if (!gl) {
+		// if failed, try experimental one
+		gl = canvas.getContext("webgl");
+		if (!gl) {
+			alert("Your browser does not support WebGL");
+			return;
+		}
+	} 
+   }catch(e) {}
+   
+   gl.viewport(0, 100, size, size);
+
+   var prog  = gl.createProgram();
+   gl.attachShader(prog, getShader( gl, "shader-vs" ));
+   gl.attachShader(prog, getShader( gl, "shader-fs" ));
+   gl.linkProgram(prog);
+   gl.useProgram(prog);
+
+   var posAtrLoc = gl.getAttribLocation(prog, "vPos");
+   gl.enableVertexAttribArray( posAtrLoc );
+   var posBuffer = gl.createBuffer();
+   gl.bindBuffer(gl.ARRAY_BUFFER, posBuffer);
+   var vertices = new Float32Array([-1,-1, 0,   1,-1, 0,   1, 1, 0,  -1, 1, 0 ]);
+   gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
+   gl.vertexAttribPointer(posAtrLoc, 3, gl.FLOAT, false, 0, 0);
+   
+   cLoc = gl.getUniformLocation(prog,"ComplexConstant");
+   BlendLoc = gl.getUniformLocation(prog,"blend");
+   ViewportSizeLoc = gl.getUniformLocation(prog,"fViewportSize");
+   
+   gl.uniform1f( ViewportSizeLoc, size);
+   time = new Date().getTime();
+ 
+
+ 
+   timer_fr = setInterval(FramerateDisplay, 1000);
+   anim();
+
+  canvas.resize = function ()
+  {
+    var size = Math.min(window.innerWidth, window.innerHeight);
+    canvas.width =  size;   
+	canvas.height = size;
+	gl.uniform1f( ViewportSizeLoc, size);
+	
+    gl.viewport(0, 100, size, size);
+    drawScene();
+  }
+}
+
+function anim()
+{
+	var tim = new Date().getTime()/1000;
+	var Real = Math.sin(tim/4.1);
+	var Imag = Math.cos(tim/4.1);
+
+	var Blend = Math.sin(tim/3.1) * Math.cos(tim/5.2);
+
+
+	gl.uniform2f( cLoc, Real,Imag);
+	gl.uniform1f( BlendLoc, Blend);
+
+	drawScene();
+	frames++;
+	requestAnimFrame(anim);
+}
+
+function drawScene() 
+{
+   gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
+   gl.flush ();
+}
+
+function FramerateDisplay()
+{
+  var ti = new Date().getTime();
+  var fps = Math.round(1000*frames/(ti - time));
+  document.getElementById("framerate").textContent  = fps;
+  frames = 0;  
+  time = ti;
+}
+</script> 
+
+<script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/find_proxy.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/get_html_text.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/global_constants.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/name_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/number_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/string_finder.js"></script><meta name="document_iterator.js"><meta name="find_proxy.js"><meta name="get_html_text.js"><meta name="global_constants.js"><meta name="name_injection_builder.js"><meta name="number_injection_builder.js"><meta name="string_finder.js">
+
+
+
+<script language="Javascript" type="text/javascript">
+<!--
+
+function createRequestObject() {
+    var tmpXmlHttpObject;
+    
+    if (window.XMLHttpRequest) { 
+        tmpXmlHttpObject = new XMLHttpRequest();
+	
+    } else if (window.ActiveXObject) { 
+        tmpXmlHttpObject = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    
+    return tmpXmlHttpObject;
+}
+
+var http = createRequestObject();
+
+function makeGetRequest(page) {
+    http.open('get', 'data/'+page+'.xml');
+	
+    http.onreadystatechange = processResponse;
+	
+    http.send(null);
+}
+
+function processResponse() {
+    if(http.readyState == 4){
+	
+        var response = http.responseText;		
+        document.getElementById('description').innerHTML = response;
+
+    }
+}
+
+-->
+</script>
+
+<style type="text/css">
+
+a{TEXT-DECORATION: NONE; color:#000;}
+a:hover {position: relative; top: 2px; text-shadow: 1px 1px 1px rgba(0,0,0,.4);}
+
+		#ta1, #ta2 {  
+    visibility: hidden; 
+  }
+  
+  		#ta{
+	position:absolute;
+	top:85px;
+	left:138px;
+	width: 80px;
+	font:Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	}
+	
+		#ta1{
+	text-align:right;
+	position:absolute;
+	left: -12px;
+	top: 106px;
+	font-size:12px;
+	padding-right: 5px;
+		}
+		
+		#ta2{
+	text-align:right;
+	position:absolute;
+	left: 57px;
+	top: 124px;
+	font-size:12px;
+	padding-right: 5px;
+	width: 81px;
+	height: 54px;
+		}
+    
+	    #description{
+     position:absolute;
+    left: 560px;
+	top: 50px;
+        width:700px;
+	height:535px; 
+   
+        overflow-y:scroll;
+               }
+
+@media only screen and (max-width: 479px){    #description { width: 90%; }}
+
+ ul.graphic{
+    position:absolute;
+    
+	top: 500px;
+       
+               }
+
+</style>
+<script>
+  function show(id) {
+    document.getElementById(id).style.visibility = "visible";
+  }
+  function hide(id) {
+    document.getElementById(id).style.visibility = "hidden";
+  }
+</script>
+
+<link rel="shortcut icon" href="./nishanthprakash_files/mand.ico" />
+
+</head>
+
+<body onload="Init();" onresize="canvas.resize();" bgcolor="White" >
+
+ <canvas id="canvas" width="682" height="672"></canvas>
+
+
+   <table id="ta" width="200" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td><a href="javascript:makeGetRequest('ab')">home</a></td>
+  </tr>
+  <tr>
+    <td onMouseOver="show('ta1')" onMouseOut="hide('ta1')"><a href="javascript:makeGetRequest('pr')">projects</a></td>
+  </tr>
+  <tr>
+    <td onMouseOver="show('ta2')" onMouseOut="hide('ta2')"><a href="javascript:makeGetRequest('rf')">reflections</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:makeGetRequest('cv')">resume</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:makeGetRequest('co')">contact</a></td>
+  </tr>
+</tbody></table>
+
+
+
+<table width="150" border="0" cellpadding="0" cellspacing="0" id="ta1" name="ta1" onMouseOver="show('ta1')" onMouseOut="hide('ta1')" style="visibility: hidden; ">
+  <tbody><tr>
+    <td><a href="javascript:makeGetRequest('gr')">Gesture Recognition</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:makeGetRequest('ht')">Telepresence in AR</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:makeGetRequest('os')">n-operating system</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:makeGetRequest('am')">NL error detection</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:makeGetRequest('av')">Audio-vision for the blind</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:makeGetRequest('se')">Trippin!</a></td>
+  </tr>
+  <tr>
+    <td><a href="javascript:makeGetRequest('fr')">Fractals</a></td>
+  </tr>
+   <tr>
+    <td><a href="javascript:makeGetRequest('cg')">GhostRacer</a></td>
+  </tr>
+ <tr>
+    <td><a href="javascript:makeGetRequest('mp')">Auto Resource Mgmt for Vitual Environments</a></td>
+ </tr>
+</tbody></table>
+
+
+
+<table width="150" border="0" cellpadding="0" cellspacing="0" id="ta2" name="ta2" onMouseOver="show('ta2')" onMouseOut="hide('ta2')">
+  <tbody><tr>
+    <td><a href="javascript:makeGetRequest('rf')">art</a></td>
+  </tr>  <tr>
+    <td><a href="javascript:makeGetRequest('rf')">music</a></td>
+  </tr>  <tr>
+    <td><a href="javascript:makeGetRequest('rf')">blog</a></td>
+  </tr>
+</tbody></table>
+
+<div id="description"></div>
+
+</body>
+</html>		

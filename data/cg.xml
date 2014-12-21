@@ -1,0 +1,9 @@
+
+
+ 
+<div >GhostRacer game using Gesture Recognition using a colored cuboidal cardboard box as bike handle<br><br>This project was done in my for a Computer Graphics course in my 2nd year of Comp. Engineering. A 'controller-free gaming and entertainment experience', based around a webcam-style add-on peripheral, it enables users to control and interact with the game without the need to touch a game controller,through a Natural User IInterface (NUI) using gestures (an interface that 'effectively becomes invisible').The 3D game was designed using OpenGL, one of the leading graphics development API. The NUI was implemented using OpenCV, a leading image processing (Computer Vision) library. 3D sound was implemented using OpenAL. Some screenshots:<br><br> 
+<img src="./nishanthprakash_files/cg1.jpg" width="495" height="330" style="margin:auto;display:block;"><br><br> 
+<img src="./nishanthprakash_files/cg2.jpg" width="495" height="330" style="margin:auto;display:block;"><br><br>
+<img src="./nishanthprakash_files/cg3.jpg" width="495" height="330" style="margin:auto;display:block;">
+</div>
+
