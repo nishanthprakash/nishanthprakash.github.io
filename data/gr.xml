@@ -1,7 +1,0 @@
-
-
-<div >Realtime Gesture Recognition using Microsoft Kinect<br><br>This project was done by me for an internship at India Innovation Labs (IIL), Bangalore.In this project we  use Microsoft Kinect which is a 3D camera that works on structured light to give us depth information apart from the usual RGB from a normal camera. Using the OpenNI and NITE libraries we track positions of certain parts of the body. The gestures are tracked.j and recognized using Artificial Neural Networks implemented using the FANN library. The whole project was done on the ROS platform for efficient interaction between different nodes. Since Gesture Recognition is closely related to Activity Recognition this project can also be used for Recognition of Activity by training of the Activity. This was to be further integrated with a project undertaken at IIL on building a fully autonomous Humanoid Robot. Some screenshots :<br><br> 
-<img src="./nishanthprakash_files/gr1.jpg" width="495" height="330" style="margin:auto;display:block;"><br><br> 
-<img src="./nishanthprakash_files/gr2.jpg" width="495" height="330" style="margin:auto;display:block;">
-</div>
-

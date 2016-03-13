@@ -1,7 +1,0 @@
-
-<div >Holographic Telepresence in Augmented Reality using Microsoft Kinect<br><br>This project, lead by me is sponsored by Diode SIG, IEEE-NITK. In this project Kinect's RGB and Depth information of what it "sees" is processed to track and extract the point cloud of a human and reconstruct it as a mesh/3D model which is then rendered on an AR marker. (Status : 90% complete) Some screenshots:<br><br> 
-<img src="./nishanthprakash_files/tr1.jpg" width="495" height="330" style="margin:auto;display:block;"><br><br> 
-<img src="./nishanthprakash_files/tr2.jpg" width="495" height="330" style="margin:auto;display:block;"><br><br>
-<img src="./nishanthprakash_files/tr3.png" width="495" height="330" style="margin:auto;display:block;">
-</div>
-
