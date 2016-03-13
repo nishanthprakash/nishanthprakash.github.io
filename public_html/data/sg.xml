@@ -1,0 +1,10 @@
+<div><font color="#444444">
+<h2 class="margined">StyleGrader</h2>
+<p align="justify" class="margined">
+I architected and developed a framework for grading the stylistics of codes written by test candidates using ANTLR parse tree generator at Aspiring Minds where I worked as a Research and Development Engineer. A taxonomy of candidate errors was constructed which the system detects and provides feedback on. Various software metrics are also evaluated as part of the code assessment. The architecture involved Aspect Oriented Programming in Java. 
+<br/><br/> Some related XKCD funnies:<br/><br/> 
+<img width="500px" src="./nishanthprakash_files/code_quality.png" style="margin:auto;display:block;">
+
+</p>
+</font>
+</div>

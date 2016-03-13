@@ -1,0 +1,7 @@
+<div><font color="#444444"><h2 class="margined">Crypto</h2>
+<p align="justify" class="margined">
+Implemented fast variants of RSA, as a part of our cryptography course project in my fourth year at NITK. Implemented the following variants of RSA algorithm: Batch RSA, Mprime RSA, Mpower RSA, Rebalanced RSA, Rprime RSA. These were coded in Java.The research paper we referred to was <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/nishanthprakash/crypto/blob/master/Reference%20papers/survey-1.pdf" target="_blank">this</a>, titled <b><i>"Fast Variants of RSA", Dan Boneh et al.</b></i><br/><br/>The code for this project can be found <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/nishanthprakash/crypto.git" target="_blank">here.</a>
+ 
+</p>
+</font>
+</div>
