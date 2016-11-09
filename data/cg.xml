@@ -1,0 +1,11 @@
+<div><font color="#444444"><h2 class="margined">GhostRacer</h2>
+<p align="justify" class="margined">
+GhostRacer is a computer game which uses Gesture Recognition with the help of a two-colored cuboidal cardboard box as bike handle for controls. This project was done in my for a Computer Graphics course in my 2nd year of Computer Engineering at NITK. A bike racing game based on Natural User Interface (NUI) was designed. This game used a very economic fluorescent colored tube made out of cardboard for gaming controls. This fluorescent tube acted as the bike handle for controlling acceleration and irection of motion of the bike. The game engine included a basic physics engine which simulated a close-to-real biking experience. 3D graphics were rendered using OpenGL. The NUI was implemented using OpenCV.<br/><br/>The code for this project can be found <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/nishanthprakash/GhostRacer.git" target="_blank">here.</a><br/><br/><i>Some screenshots:</i><br/> 
+Shown here is the bike with brakes, the yellow-fluorescent colored part of the cuboidal tube is seen in one window, while the bike race game visual is seen in the other window. The angle (or slope) of the cuboidal tube describes what direction the bike is taking at that instant. The current state of the bike is "braking or decelerating" and the direction it is moving is "rightward".<br/><br/> <img src="./nishanthprakash_files/cg1.jpg" width="495" height="330" style="margin:auto;display:block;"><br><br>When the cuboidal tube is turned like the way one uses the accelerator on the bike, the orange-fluorescent colored part of the cuboidal tube becomes visible to the webcam and the bike starts accelerating. We see the accelerating bike in the other game window and the speed is shown in the form of a progress bar in the bottom of the game window.<br/> <br/>
+<img src="./nishanthprakash_files/cg2.jpg" width="495" height="330" style="margin:auto;display:block;"><br/><br/>Just another screenshot. <br/><br/>
+<img src="./nishanthprakash_files/cg3.jpg" width="495" height="330" style="margin:auto;display:block;">
+</p>
+</font>
+</div>
+
+

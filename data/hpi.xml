@@ -1,0 +1,8 @@
+<div><font color="#444444">
+<h2 class="margined">OpenHPI Video Player</h2>
+<p align="justify" class="margined">
+Developed a synchronized dual-stream video-player using the Polymer web framework, as part of the OpenHPI MOOC platform and the tele-TASK platform, for optimized video experience. This is a project I contributed to at the Hasso Plattner Institute, Germany.
+The code repo is <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/openHPI/HTML5Player" target="_blank">here.</a>
+</p>
+</font>
+</div>
