@@ -1,7 +1,0 @@
-<div><font color="#444444">
-<h2 class="margined">Code Search Engine</h2>
-<p align="justify" class="margined">
-This is a search engine to search for code phrases C codes. I developed this search engine as part of my job interview with Aspiring Minds (June, 2014). Given a database of codes, this search engine builds a database of reverse indices of all the 'code phrases' found in the DB to the particular indices of the programs using a neat hash function. This work is based on <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="http://web.stanford.edu/~cpiech/bio/papers/scalableHomeworkSearch.pdf" target="_blank">this paper</a> titled <i><b>"Codewebs: Scalable Homework Search for Massive Open Online Programming Courses", Andy Nguyen et al.</b></i> <br/><br/>The code for this project can be found <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/nishanthprakash/C-codeSearchEngine.git" target="_blank">here.</a>
-</p>
-</font>
-</div>

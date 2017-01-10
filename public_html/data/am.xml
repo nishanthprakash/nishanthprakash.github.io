@@ -1,5 +1,0 @@
-<div><font color="#444444">
-<h2  class="margined">Grammer error detection in formal written discourse in English</h2>
-<p align="justify" class="margined">
-I worked on this project as a part of my summer research internship at Aspiring Minds Pvt. Ltd. (May-July, 2012) The company is involved among various things in developing scientific tools which enable reliable, precise and standardized evaluation of talent in competencies important to predict trainability and on job performance of an individual.<br><br> This project consisted of detection of grammatical errors in written discourse in the english language. A study was done to evaluate langauge error models, and ways of detecting these errors. An application was developed for auto scoring e-mails, based on acceptability of sentence constructions, formatting, cohesion, coherence, etc. A probabilistic machine learning approach using Naive Bayesian models together with n-gram word models and their Parts-of-Speech (RASP) tags were used for checking sentence construction acceptability. The Natural Language Toolkit (NLTK) was used for development of the application. This was coded in Python.
-</p></font></div>

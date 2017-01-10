@@ -1,9 +1,0 @@
-<div><font color="#444444">
-<h2 class="margined"> Test Suite Validator</h2>
-<p align="justify" class="margined">
-I worked on this project at Aspiring Minds where I was a Research and Development Engineer. Developed a tool for autovalidation of test suites used to check correctness of programs submitted in coding tests, by clustering similarities in the behaviour of testcases against these codes. This involved mining concepts in the solution space of a given problem, mapping their relationships to the semantics of solution programs, and in turn relating these to the cognitive process of generating program solutions by candidates so as to be able to grade the programming ability of a candidate.
-<br/><br/>
-A blog titled "<i><b>What we learn from patterns in test case statistics of student-written computer programs</b></i>", which discusses observations found by using this tool could be found <a style="all:unset; color:#0000FF;" target="_blank" href="http://research.aspiringminds.com/category/programming-assessments/test-cases/" >here</a> 
-</p>
-</font>
-</div>

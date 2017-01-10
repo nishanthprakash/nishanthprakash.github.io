@@ -1,8 +1,0 @@
-<div><font color="#444444"><h2 class="margined">N - Operating System</h2>
-<p align="justify" class="margined">A basic operating system was designed from scratch for the x86 architecture based on monolithic kernel design (UNIX - like) as part of the course project for the 'Operating Systems' course in my third year at NITK. This project was done using online tutorials and help from various forums like <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="http://wiki.osdev.org/Main_Page" target="_blank">osdev.org</a> and <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="http://www.osdever.net/" target="_blank">osdever.net</a> and invovled building a basic Operating System like unix.<br><br> 
-</p>
-</font>
-</div>
-
-
-
