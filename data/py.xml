@@ -1,7 +1,7 @@
 <div><font color="#444444">
 <h2 class="margined">Pyret</h2>
 <p align="justify" class="margined">
-As part of the <a href="https://cs.brown.edu/research/plt/">Brown University Programming Languages Team</a>, I have constributed to the Pyret programming language in the form of bug fixes. Pyret is a programming language that combines the best of functional and scripting languages to create an outstanding language for teaching and, perhaps down the road, general-purpose programming. Pyret is an umbrella for several efforts in compilation, type systems, error-reporting, language design, and much more.
+As part of the <a href="https://cs.brown.edu/research/plt/">Brown University Programming Languages Team</a>, I have contributed to the Pyret programming language in the form of bug fixes. Pyret is a programming language that combines the best of functional and scripting languages to create a language for teaching and, perhaps down the road, general-purpose programming. Pyret is an umbrella for several efforts in compilation, type systems, error-reporting, language design, and much more.
 The code repo is <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/brownplt/pyret-lang" target="_blank">here.</a>
 </p>
 </font>
