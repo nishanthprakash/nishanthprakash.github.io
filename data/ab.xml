@@ -1,12 +1,27 @@
 <div><font color="#444444">
 <p align="justify" class="margined">
-<span class="firstcharacter">H</span>ello World! I'm Nishanth Prakash, a graduate student studying Computer Science at Brown University. <br/> <br/>
+<span class="firstcharacter">H</span>ello World! I'm Nishanth Prakash, a masters student studying Computer Science at Brown University (expected to graduate in May, 2018). I obtained my undergraduate degree in Computer Engineering from National Institute of Technology Karnataka, Surathkal. I'm originally from Bangalore, India.<br/><br/>
+
+I have developed, over the last few years an abiding interest in exploring the symmetry that "miraculously" exists between mathematics and nature. This has naturally led to me to delve into areas related to Machine Learning, Reinforcement Learning, AI and Computer Science Theory in general. <br/><br/>
+
+I have also developed a penchant for programming; I believe it is where the mathematical symmetries are at action, and alive! I have had the opportunity to develop software for a variety of different domains including Databases (HPE - Vertica), Compilers and Program Analyzers (Aspiring Minds), Machine Learning -- Computer Vision, Natural Language Processing (India Innovation Labs, Aspiring Minds). <br/><br/>
+
+The above interests have also in turn led me to explore ideas at the intersection of Machine Learning and Software Engineering such as Automated Analysis of Software Design and Software Synthesis. <br/><br/>
+
+Lastly, but most importantly, I'm interested in playing a part in the understanding and deconstruction of human intelligence and cognition in terms of mathematical constructs. I believe that this not only enables the understanding of the biological process of learning but also reciprocally helps build biologically inspired artificial intelligent agents that can augment human abilities, overcome disabilities, improve human learning and cognition (resulting in effective education) and assist in the everlasting human enterprise of understanding the world.<br/><br/>
+
+Causes I care deeply about:
+<ul style="list-style-type:disc">
+	<li>Design and development of intelligent assistive technologies for the functionally disabled</li>
+	<li>Building sustainable platforms for decentralized ownership of data and Artificial Intelligence</li>
+	<li>Computer Science Education</li>
+</ul>
 
 <!--I graduated from National Institute of Technology Karnataka, Surathkal (NITK/KREC), with a BTech. degree in Computer Engineering in 2013. I then worked as a Software Developer at Netapp and then as a Research and Development Engineer at Aspiring Minds, about one year at each. I was a Visiting Research Scholar at the Hasso Plattner Institut, Potsdam, Germany, in the summer of 2016. <br/> <br/> 
 
 My core research focus is in the deconstruction of human intelligence and cognition into mathematical constructs. I believe that this not only enables the understanding of the biological process of learning but also reciprocally helps build biologically inspired artificial intelligent agents that can augment human abilities, overcome disabilities, improve human learning and cognition (resulting in effective education) and assist in the everlasting human enterprise of understanding the world.<br/><br/>
 
-Currently, I am focused on classifying/clustering the different programming plans that students use to compose their programs and solve particular problems.--> Over the last few years, I have developed a passion for Programming Languages and Machine Learning, and am interested in exploring the intersection of these fields.<!--, such as in Computer-Aided Program Synthesis and Software Engineering.--><br/> <br/>
+Currently, I am focused on classifying/clustering the different programming plans that students use to compose their programs and solve particular problems. Over the last few years, I have developed a passion for Programming Languages and Machine Learning, and am interested in exploring the intersection of these fields, such as in Computer-Aided Program Synthesis and Software Engineering.<br/> <br/> --> 
 
 Check out the projects I have worked on the 'projects' tab. You can find my other interests and activities <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="javascript:makeGetRequest('in')">here</a> 
 </p>
