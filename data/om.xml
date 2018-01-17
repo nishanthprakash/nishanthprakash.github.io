@@ -1,8 +1,7 @@
 <div><font color="#444444">
 <h2 class="margined">OpenMined</h2>
 <p align="justify" class="margined">
-I have lately been getting involved with the OpenMined project, an open-source community focused on building technology to facilitate the decentralized ownership of data and intelligence. I have so far contributed in the form of minor functionalities to PySyft, a Homomorphically Encrypted Deep Learning Library. 
-
+I have lately been getting involved with the OpenMined project, an open-source community focused on building technology to facilitate the decentralized ownership of data and intelligence. I have so far contributed in the form of minor functionalities to PySyft, a Homomorphically Encrypted Deep Learning Library.<br/><br/>
 The code repo is <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/OpenMined/PySyft" target="_blank">here.</a>
 </p>
 </font>

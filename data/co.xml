@@ -1,7 +1,7 @@
 <div><font color="#444444">
 <h2 class="margined">Code Ocean</h2>
 <p align="justify" class="margined">
-As a Visiting Researcher at the Hasso Plattner Institute, Germany, I was involved in developing novel tools that provide feedback on the stylistics of computer programs written by students as part of their programming ability assessment in OpenHPI&#39;s CodeOcean, an open source coding and code assessment platform.
+As a Visiting Researcher at the Hasso Plattner Institute, Germany, I was involved in developing novel tools that provide feedback on the stylistics of computer programs written by students as part of their programming ability assessment in OpenHPI&#39;s CodeOcean, an open source coding and code assessment platform.<br/><br/>
 The code repo is <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/openHPI/codeocean" target="_blank">here.</a>
 </p>
 </font>
