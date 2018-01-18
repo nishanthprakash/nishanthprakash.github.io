@@ -2,7 +2,7 @@
 <h2 class="margined">VERTICA Database Load Optimization</h2>
 <p align="justify" class="margined">
 As part of my internship with the Query Engine Team at Vertica, I optimized performance of data load queries in the presence of constant valued data, by surgerizing the query plan at the point of writing to disk (the DataTarget Operator), to have it maintain a compressed record of materialized constant values. This significantly minimizes memory spills during the sort operation performed before data is written out to Read Optimized Storage files. 
-<br><br><img src="./nishanthprakash_files/g1tr.png" width="35%" style="margin:auto;display:inline-block;">&nbsp;<img src="./nishanthprakash_files/g2tr.png" width="35%" style="margin:auto;display:inline-block;"><br><br>
+<br><br><img src="./nishanthprakash_files/g1tr.png" width="35%" style="margin:auto;text-align:center;display:inline-block;">&nbsp;<img src="./nishanthprakash_files/g2tr.png" width="35%" style="margin:auto;text-align:center;display:inline-block;"><br><br>
 
 </p>
 </font>
