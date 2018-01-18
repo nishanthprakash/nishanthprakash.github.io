@@ -5,7 +5,7 @@ As part of my internship with the Query Engine Team at Vertica, I optimized perf
 <br/>
 The load data is sorted before writing out to Read Optimized Storage (ROS). The sort operation executed using External Merge Sort caused unnecessary memory spills in the presence of constant valued columns.<br/>
 <br/>
-This was prevented by surgerizing the query plan so as to have the constant valued columns not materialize across the rows but instead have them independently encoded written out to ROS (this is possible as Vertica is a Column-Store Database).<br>
+This was prevented by surgerizing the query plan so as to have the constant valued columns not materialize across the rows but instead have them independently Run-Length encoded and written out to ROS (this is possible as Vertica is a Column-Store Database).<br>
 <br><center><img src="./nishanthprakash_files/g1tr.png" width="45%" style="margin:auto;display:inline-block;">&nbsp;<img src="./nishanthprakash_files/g2tr.png" width="45%" style="margin:auto;display:inline-block;"></center><br>
 <br>
 </p>
