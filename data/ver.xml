@@ -6,8 +6,7 @@ As part of my internship with the Query Engine Team at Vertica, I optimized the 
 The load data is sorted before writing out to Read Optimized Storage (ROS). The sort operation executed using External Merge Sort caused unnecessary memory spills in the presence of constant valued columns.<br/>
 <br/>
 This is prevented by surgerizing the query plan so as to have the constant valued columns not materialize across the rows but instead have them independently Run-Length encoded and written out to ROS (this is possible as Vertica is a Column-Store Database).<br>
-<br><center><img src="./nishanthprakash_files/g1tr.png" width="45%" style="margin:auto;display:inline-block;">&nbsp;<img src="./nishanthprakash_files/g2tr.png" width="45%" style="margin:auto;display:inline-block;"></center><br>
-<br>
+<br><center><img src="./nishanthprakash_files/g1tr.png" width="45%" style="margin:auto;display:inline-block;">&nbsp;<img src="./nishanthprakash_files/g2tr.png" width="45%" style="margin:auto;display:inline-block;"></center>
 </p>
 <footer><hr><a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="http://vldb.org/pvldb/vol5/p1790_andrewlamb_vldb2012.pdf" target="_blank">[1] <i>Lamb, Andrew, et al. "The vertica analytic database: C-store 7 years later." Proceedings of the VLDB Endowment 5.12 (2012): 1790-1801.</i></a></footer>
 </font>
