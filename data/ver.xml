@@ -1,5 +1,5 @@
 <div><font color="#444444">
-<h2 class="margined">VERTICA Database Load Optimization</h2>
+<h2 class="margined">VERTICA Database<sup>[1]</sup> Load Optimization</h2>
 <p align="justify" class="margined">
 As part of my internship with the Query Engine Team at Vertica, I optimized the performance of data load queries from O(nlogn) to O(n) near-constant response time in the presence of n constant valued columns of data.<br/>
 <br/>
@@ -9,5 +9,6 @@ This is prevented by surgerizing the query plan so as to have the constant value
 <br><center><img src="./nishanthprakash_files/g1tr.png" width="45%" style="margin:auto;display:inline-block;">&nbsp;<img src="./nishanthprakash_files/g2tr.png" width="45%" style="margin:auto;display:inline-block;"></center><br>
 <br>
 </p>
+<footer><hr><a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="http://vldb.org/pvldb/vol5/p1790_andrewlamb_vldb2012.pdf" target="_blank">[1] <i>Lamb, Andrew, et al. "The vertica analytic database: C-store 7 years later." Proceedings of the VLDB Endowment 5.12 (2012): 1790-1801.</i></a></footer>
 </font>
 </div>
