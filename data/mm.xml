@@ -1,7 +1,11 @@
 <div><font color="#444444">
-<h2 class="margined">Muscle Memory</h2>
+<h2 class="margined">MuscleMemory</h2>
 <p align="justify" class="margined">
-
+The world appears to be a place where the mathematics we have developed seems to work. The better you are at math consciously or subconsciously, the better you would be able to take advantage of the way the world works.<br/>
+<br/>
+An ustad Sarod player trains her fingers and her perception of rhythm so as to achieve mathematical precision of the patterns of notes she wants realized; a chess player builds a map of possible configurations of pieces on the chessboard and best moves from that point; likewise a quant in the financial districts in Manhatten, may use the mathematical skills she has consciously trained with to make huge financial profits.<br/>
+<br/>
+My chosen profession is that of a Computer Science and MuscleMemory is my attempt at practicing with algorithms inorder to achieve expertise in dealing with what can be called the "imperative (how-to) knowledge" of the world, through the range of possibilities a computer presents. You may find <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/nishanthprakash/MuscleMemory" target="_blank">here</a> a collection of interseting algorithm problems and solutions, as well as other related nuggets, that I take pleasure collecting. 
 </p>
 </font>
 </div>
