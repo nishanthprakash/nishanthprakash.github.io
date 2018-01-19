@@ -2,12 +2,12 @@
 <h2 class="margined">Clustering programs by plan composition</h2>
 <p align="justify" class="margined">
 
-In the context of Computer Science education, it is interesting to study how beginner students compose their computer programs plans for solving a problem involving multiple subtasks. 
-
-Consider, for example, the classic data processing problem called the "Rainfall problem": students are given a list of numbers either refering to a date or to a rainfall measurements for a particular day, and are asked to develop a program that outputs average rainfall readings per day for a given month. Naturally, this problems involves subtasks such as parsing the numbers into dates or readings, filtering the readings with respect to a particular month and aggregating the readings into average readings.
-
-The solutions to the subtasks of a problem can be composed in multiple different ways. One may choose, for example, to perform parsing, filtering, aggregating, etc. all in one traversal across the input list, or may choose to have all of these tasks separately solved across multiple traversals across the input list. This project deals with automated clustering (unsupervised) of student written computer programs with respect to the plans used in the programs.
-
+In the context of Computer Science education, it is interesting to study how beginner students compose their computer programs plans for solving a problem involving multiple subtasks.<br/>
+<br/>
+Consider, for example, the classic data processing problem called the "Rainfall problem": students are given a list of numbers either refering to a date or to a rainfall measurements for a particular day, and are asked to develop a program that outputs average rainfall readings per day for a given month. Naturally, this problems involves subtasks such as parsing the numbers into dates or readings, filtering the readings with respect to a particular month and aggregating the readings into average readings.<br/>
+<br/>
+The solutions to the subtasks of a problem can be composed in multiple different ways. One may choose, for example, to perform parsing, filtering, aggregating, etc. all in one traversal across the input list, or may choose to have all of these tasks separately solved across multiple traversals across the input list. This project deals with automated clustering (unsupervised) of student written computer programs with respect to the plans used in the programs.<br/>
+<br/>
 From experience, we have found that the programming language used by students have profound effects on the way the students compose their program plans. The system developed would be helpful in proving how functional programming languages influence students in writing code that is more elegant and that respects fundamental ideas in software engineering such as the Separation of Concerns in better ways.
 </p>
 </font>
