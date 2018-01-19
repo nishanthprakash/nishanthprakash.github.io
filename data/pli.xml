@@ -1,7 +1,7 @@
 <div><font color="#444444">
-<h2 class="margined">Paret series of interpreters</h2>
+<h2 class="margined">Paret interpreters</h2>
 <p align="justify" class="margined">
-
+Developed interpreters in Pyret for functional programming language called Paret, incrementally supporting supporting basic operators, conditionals, functions, records, type-checking and type inference (as part of course assignments for CS173 Programming Languages at Brown).
 </p>
 </font>
 </div>
