@@ -2,6 +2,15 @@
 <h2 class="margined">Desugaring synthesis using Sketch</h2>
 <p align="justify" class="margined">
 
+Desugaring, a form of program manipulation that the transforms syntactic sugar in a program expressed in a "surface" programming language, to their corresponding fundamental constructs in the core of that "surface" language. <br/>
+<br/>
+It is a vital tool in the study of programming languages but has been known to be ardous and time consuming making it infeasible to reduce the semantics of many real world languages that are widely used. It would hence be useful to understand how much of this process is automatable.<br/>
+<br/>
+In this project I studied the scalability of Sketch, a solver aided programming language, in synthesizing desugarings of complex programming language constructs. Specifically I studied a related system called SyntRec.<sup>[1]</sup><br/>
+<br/>
+The main tasks involved development of a series of interpreters for "surface" programming language (desugaring from) and for the corresponding "core" programming language (desugaring into). With these interpreters, we could develop specfications of the form: assert(interp<sub>C<sub/>(desugaring((P))) == interp<sub>S<sub/>(P)). Here, P is any arbitrary program in the surface language S (the interpreter for S is interp<sub>S<sub/>), "desugaring" is the function to be synthesized, and C is the core language (interp<sub>C<sub/> being its interpreter) we want P to be desugared into. We also provide a sketch for the function "desugaring" using certain constructs provided by the SyntRec system. The SyntRec system then synthesizes the desugaring function that meets the constraints using type-driven syntax guided synthesis techniques.<br/>
+<br/>
+For example, desugaring of 'and', 'or', 'not' and 'xor' expressions to conditional expressions were synthesized with ease. More complex programming constructs such as lambda definitions, function applications, identifiers and let expressions. The desugaring of let expressions into lambda functions failed on the test bed due to memory constraints.
 </p>
-</font>
+<footer><hr><a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://arxiv.org/pdf/1507.05527.pdf" target="_blank">[1] <i>Inala, Jeevana Priya, et al. "Synthesis of Recursive ADT Transformations from Reusable Templates." arXiv preprint arXiv:1507.05527 (2015)</i></a></footer></font>
 </div>
