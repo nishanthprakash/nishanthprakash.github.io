@@ -5,8 +5,8 @@ This project involved attempting to replicate the results of the 5th experiment 
 <br/> 
 The 5th experiment, i.e. the Two-Step MDP, is a classic experiment that helps differentiate model-based and model-free agent behaviors. In the context of the above paper, it is used to show that the Meta-Learning agent exhibits behavior that resembles that of model-based agents (model-based agents can be thought of as a kind of meta-learners as they build a model of the environment, i.e. transition function and reward function, before learning an optimal policy for the given environment).<br>
 <br>
-The following graph shows the "stay probabilities" in the replication results of the Two-Step MDP experiment:<br>
-<br><center><img src="./nishanthprakash_files/lstm1.png" width="45%" style="margin:auto;display:inline-block;"></center>
+The following graph shows the "stay probabilities" in the replication results of the Two-Step MDP experiment:
+<center><img src="./nishanthprakash_files/lstm1.png" width="45%" style="margin:auto;display:inline-block;"></center>
 </p>
 </font>
 </div>
