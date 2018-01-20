@@ -2,8 +2,20 @@
 <h2  class="margined">Visual Prosthesis</h2>
 <p align="justify" class="margined">
 
-This project aims to provide gesture recognition interface, as part of a visual prosthesis system consisting of a wearable spectacle frame with mounted RGB, Depth cameras and motion sensors, for assisting the visually impaired in their daily activities.
-<br/><br/>
+This project aims to provide gesture recognition interface, as part of a visual prosthesis system consisting of a wearable spectacle frame with mounted RGB, Depth cameras and motion sensors, for assisting the visually impaired in their daily activities.<br/>
+<br/>
+Dr. Paradiso et al. have developed a wearable assistive device that enables the visually impaired to identify, locate and interact with the objects present in their environment. The device consists of a depth sensing camera, a wide-angle (FishEye) RGB camera and an IMU (Inertial Magnetic Unit consisting of an accelerometer, a magnetometer, a gyroscope, etc.) which relay the data to a wearable computer which then processes the data to identify and locate the objects in the users surroundings. This information is conveyed to the user in the form of three dimensional audio cues which the user can also use to comprehend the location of various objects relative to the users current location.
+
+<center><img src="./nishanthprakash_files/device_trans.png" width="45%" style="margin:auto;display:inline-block;"></center>
+
+In its current form, users can interact with the device using voice commands. The device currently consists of many subsystems (eg. object recognition, obstacle detection, speech recognition and a primitive hand tracking system). The interaction with the device using voice commands has been found to be cumbursome in situations when the user is trying to pick up objects for example. This necessitates a more natural means of communication through hand pose estimation and natural hand gestures recognition.<br/>
+<br/>
+As a first step we have developed a gesture recognition system which uses the hand tracking system to recognize simple swipe like gestures made with the pointer finger, using a simple feedforward neural network architecture trained with backpropagation algorithm. The following is one example gesture (note that the plot is inverted relative to the camera orientation). We trained with 6 gestures, 5 of which have high recogntion rate (100%).
+
+<center><img src="./nishanthprakash_files/cplot.gif" width="45%" style="margin:auto;display:inline-block;">&nbsp;<img src="./nishanthprakash_files/circle.gif" width="45%" style="margin:auto;display:inline-block;"></center>
+
+We intend to have a more advanced hand pose estimation system to recognize and track more natural gestures such as those we expect one to make when picking up objects for example.<br/>
+<br/>
 (Advised by Prof. Dr. Michael Paradiso, Neuroscience Department, Brown University)
 </p>
 </font>
