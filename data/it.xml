@@ -1,5 +1,5 @@
 <div><font color="#444444">
-<h2 class="margined">IRT in unit testing</h2>
+<h2 class="margined">IRT in Testing</h2>
 <p align="justify" class="margined">
 I worked on this project at Aspiring Minds where I was a Research and Development Engineer (2015). As part of this project I explored the 3 paramter logistic item response theory model for program analysis using unit test case responses of the programs as items with the intuition that unit test cases check for certain programming constructs required as part of the solution program.</p>
 </font>
