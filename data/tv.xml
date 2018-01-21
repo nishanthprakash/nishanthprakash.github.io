@@ -14,7 +14,7 @@ The following is a screen shot of the part of the tool that deals with identifyi
 <p align="justify" class="margined">
 The following is a dendrogram visualization of hierarchical clustering of testcases (based on pass/fail across programs). The dendrogram below helped us identify clusters in testcases as shown below, resulting from two important concepts in the problem. (We later found that one of the concepts was not something we intended to test, adding an uncalled for impurity to the assessment objective; more on this in the blog post I've linked below<sup>[1]</sup>)<br/>
 <br/>
-<center><img src="./nishanthprakash_files/tc_dendrogram.png" width="45%" style="margin:auto;display:inline-block;"></center><br/>
+<center><img src="./nishanthprakash_files/tc_dend_tran.png" width="45%" style="margin:auto;display:inline-block;"></center><br/>
 <br/>
 </p>
 <p align="justify" class="margined">
