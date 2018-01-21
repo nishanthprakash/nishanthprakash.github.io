@@ -8,17 +8,23 @@ On the flip side, we could also use programs as test cases to estimate how good 
 I built a tool that generates statistics and visualizations to gain such insights on the then available data, over 2500 test cases spread across 50 programming problems attempted nearly by 18,000 candidates.<br/>
 <br/>
 The following is a screen shot of the part of the tool that deals with identifying anomalous behavior of test-cases.<br/><br/>
-<center><img src="./nishanthprakash_files/tc_anoms.png" width="45%" style="margin:auto;display:inline-block;"></center><br/>
+<center><img src="./nishanthprakash_files/tc_anoms.png" width="75%" style="margin:auto;display:inline-block;"></center><br/>
 <br/>
+</p>
+<p align="justify" class="margined">
 The following is a dendrogram visualization of hierarchical clustering of testcases (based on pass/fail across programs). The dendrogram below helped us identify clusters in testcases as shown below, resulting from two important concepts in the problem. (We later found that one of the concepts was not something we intended to test, adding an uncalled for impurity to the assessment objective; more on this in the blog post I've linked below<sup>[1]</sup>)<br/>
 <br/>
 <center><img src="./nishanthprakash_files/tc_dendrogram.png" width="45%" style="margin:auto;display:inline-block;"></center><br/>
 <br/>
+</p>
+<p align="justify" class="margined">
 The following is a histogram of candidate scores (test-cases based) for a particular problem, useful in understanding how difficult the programming problem is and if there are clusters in these scores. We would ideally want to design problems and their test-cases such that the scores are uniformly distributed across the whole range.<br/>
 <br/><center><img src="./nishanthprakash_files/tc_hist.png" width="45%" style="margin:auto;display:inline-block;"></center>
 </p>
-<footer>
+<footer><hr>
+<p align="justify" class="margined">
 [1] A blog titled <a style="all:unset; color:#0000FF;" target="_blank" href="http://research.aspiringminds.com/test-case-analytics/" ><i><b>What we learn from patterns in test case statistics of student-written computer programs</b></i></a>, discusses some observations using this tool.
+</p>
 </footer>
 </font>
 </div>

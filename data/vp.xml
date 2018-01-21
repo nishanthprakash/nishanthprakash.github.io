@@ -8,14 +8,22 @@ Dr. Paradiso et al. have developed a wearable assistive device that enables the 
 <br/>
 <center><img src="./nishanthprakash_files/device_trans.png" width="45%" style="margin:auto;display:inline-block;"></center><br/>
 <br/>
+</p>
+<p align="justify" class="margined">
 In its current form, users can interact with the device using voice commands. The device currently consists of many subsystems (eg. object recognition, obstacle detection, speech recognition and a primitive hand tracking system). The interaction with the device using voice commands has been found to be cumbursome in situations when the user is trying to pick up objects for example. This necessitates a more natural means of communication through hand pose estimation and natural hand gestures recognition.<br/>
 <br/>
+</p>
+<p align="justify" class="margined">
 As a first step we have developed a gesture recognition system which uses the hand tracking system to recognize simple swipe like gestures made with the pointer finger, using a simple feedforward neural network architecture trained with backpropagation algorithm. The following is one example gesture (note that the plot is inverted relative to the camera orientation). We trained with 6 gestures, 5 of which have high recogntion rate (100%).<br/>
 <br/>
 <center><img src="./nishanthprakash_files/cplot.gif" width="45%" style="margin:auto;display:inline-block;">&nbsp;<img src="./nishanthprakash_files/circle.gif" width="45%" style="margin:auto;display:inline-block;"></center><br/>
 <br/>
+</p>
+<p align="justify" class="margined">
 We intend to have a more advanced hand pose estimation system to recognize and track more natural gestures such as those we expect one to make when picking up objects for example.<br/>
 <br/>
+</p>
+<p align="justify" class="margined">
 (Advised by Prof. Dr. Michael Paradiso, Neuroscience Department, Brown University)
 </p>
 </font>
