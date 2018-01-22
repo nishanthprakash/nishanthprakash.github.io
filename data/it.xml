@@ -1,7 +1,9 @@
 <div><font color="#444444">
 <h2 class="margined">IRT in Testing</h2>
 <p align="justify" class="margined">
-Item Response Theory (IRT) is a a method for testing and establishing the position of an individual (a test taker), along a latent dimension (latent trait or ability). It is a data driven approach based on the relationship between individuals’ performances on a test item and the test takers’ levels of performance on an overall measure of the ability that item was designed to measure. It is considered superior to Classical Test Theory (which estimates ability through sum of predefined scores across items/questions) as it provides richer information and has been used to develope scales in "high stakes tests" such as GRE and GMAT.<br/>
+Item Response Theory (IRT) is a a method for testing and establishing the position of an individual (a test taker), along a latent dimension (latent trait or ability). It is a data driven approach based on the relationship between individuals’ performances on a test item and the test takers’ levels of performance on an overall measure of the ability that item was designed to measure.<br/>
+<br/>
+It is considered superior to Classical Test Theory (which estimates ability through sum of predefined scores across items/questions) as it provides richer information and has been used to develope scales in "high stakes tests" such as GRE and GMAT.<br/>
 <br/>
 Central to IRT is the Item Response Function (IRF) which gives the probability that a person with a given ability level will answer correctly and is "learnt" from data. In three parameter logistic model (3PL), the probability of a correct response to a dichotomous item i is defined as:
 </p>
