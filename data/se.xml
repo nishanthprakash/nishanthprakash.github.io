@@ -3,7 +3,7 @@
 <p align="justify" class="margined">
 Trippin is a trip organizer web mashup application that has features and functions that allow users to view information on a location for the purpose of organizing a trip. I worked on this project as part of the course project for the course 'Software Engineering' during my third year at NITK. The application is rendered intelligent using recommender system that recommends user locations based on his browsing data and summarizers which summarize reviews on a location. It uses 9 APIs like Google Maps, Freebase, Wolfram Alpha, etc. The server-side is coded in PHP.  The frontend used javascript and Bootstrap CSS framework for styling.<br/><br/>The code for this project can be found <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="https://github.com/nishanthprakash/trippin.in.git" target="_blank">here.</a><br/><br/>
 
-Here's a link to the website (the site is probably down now): <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="www.trippin.in" target="_blank"> Trippin! </a>
+Here's a link to the website (defunct): <a style="all:unset; color:#0000FF;" onmouseover="this.style.textDecoration='underline'; this.style.color='red';" onmouseout="this.style.textDecoration='none'; this.style.color='blue';" href="www.trippin.in" target="_blank"> Trippin! </a>
 </p>
 </font>
 </div>
