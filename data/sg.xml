@@ -2,7 +2,7 @@
 <h2 class="margined">StyleGrader</h2>
 <p align="justify" class="margined">
 
-I architected and developed a static program analyzer framework for assessing the stylistics of computer programs developed by test candidates, in the context of programming skill assessment.This was the first time I stumbled across a very interesting problem in the theory of programming languages called the "Expression Problem,"<sup>[1]</sup> first described by Philip Wadler. Here's a note on some related ideas and the implementation:<br/>
+I architected and developed a static program analyzer framework for assessing the stylistics of computer programs developed by test candidates, in the context of programming skill assessment. This was the first time I stumbled across a very interesting problem in the theory of programming languages called the "Expression Problem,"<sup>[1]</sup> first described by Philip Wadler. Here's a note on some related ideas and the implementation:<br/>
 <br/>
 In functional programming, a typical (elegant) way to perform computation over items in list datatypes is using higher order functions such as map/filter/fold which provide a traversal abstraction to which one provides a function that does the actual computation (a function on an item for map, or a predicate for filter, a function over an item and an aggregate for fold). One of the reasons this is elegant is because, we see that there is Separation of Concerns (a fundamental idea in software engineering) with respect to the traversal code and the computation code.  One can imagine similar traversal structures for the tree datatype which are a generalization of the list datatype.<br/>
 <br/>
