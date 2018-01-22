@@ -10,7 +10,7 @@ In this project I studied the scalability of Sketch, a solver aided programming 
 <br/>
 The main tasks involved development of a series of interpreters for "surface" programming language (desugaring from) and for the corresponding "core" programming language (desugaring into). With these interpreters, we could develop specfications of the form: assert(interp<sub>C</sub>(desugaring((P))) == interp<sub>S</sub>(P)). Here, P is any arbitrary program in the surface language S (the interpreter for S is interp<sub>S</sub>), "desugaring" is the function to be synthesized, and C is the core language (interp<sub>C</sub> being its interpreter) we want P to be desugared into. We also provide a sketch for the function "desugaring" using certain constructs provided by the SyntRec system. The SyntRec system then synthesizes the desugaring function that meets the constraints using type-driven syntax guided synthesis techniques.<br/>
 <br/>
-For example, desugaring of 'and', 'or', 'not' and 'xor' expressions to conditional expressions were synthesized with ease. More complex programming constructs such as lambda definitions, function applications, identifiers and let expressions. The desugaring of let expressions into lambda functions failed on the test bed due to memory constraints.
+For example, desugaring of 'and', 'or', 'not' and 'xor' expressions to conditional expressions were synthesized with ease. More complex programming constructs include lambda definitions, function applications, identifiers and let expressions. The desugaring of let expressions into lambda functions failed on the test bed due to memory constraints.
 </p>
 <footer><hr>
 <p align="justify" class="margined">

@@ -2,7 +2,17 @@
  
 <div><font color="#444444">
 <h2 class="margined">Quantification of irregularities in human body movements using fractal analysis</h2>
-<p align="justify" class="margined">As part of this project I investigated the application of fractal analysis in quantification of grace and consistency in human body movements under the guidance of Prof. S N Omkar, Chief Research Scientist at the Department of Aerospace Engineering, Indian Institute of Science, Bangalore. I worked on this project as part of my winter research internship at IISc in December, 2011. A statistical model to quantify grace and consistency of body movements was developed using data obtained from Inertial Magnetic Unit belt worn by the activity performers. The variogram estimator was used for the estimation of Fractal Dimensions, the inverse of which describes the smoothness of a time series graph and hence corresponds to a measure of grace of performance of a movement. Feedback to improve grace by localizing jerky movements in the time series, is also given using the instantaneous frequency measures obtained from Hilbert-Huang transformation of the performance data. The R programming language was used for computation. For more details on this please contact me.
+<p align="justify" class="margined">As part of this project I investigated the application of fractal analysis in quantification of irregularities and inconsistencies in human body movements.<br/>
+<br/>
+Data collected using Inertial Magnetic Unit (IMU) belt worn by the activity performers was used to analyze the human body movements. Fractal Dimension is a measure of complexity comparing how detail in a pattern changes with the scale at which it is measured. It has also been characterized as a measure of the space-filling capacity of a pattern. We use this characteristic property to quantify how irregular a graph/trend is, specifically how irregular the body movement measurements obtained from the IMU is.<br/>
+<br/>
+We also compared the performances of Fractal Dimension measurements to other methods of measuring irregularities in graphs such as those using Fourier Transform (to understand if there are high frequency components), Wavelet Transforms (to help localize body movement measurements function simultaneously on both time and frequency domain) and Hilbert-Huang Transform (to obtain instantaneous frequency measures as a function of time -- in order to localize jerky movements, i.e. better localization of signal simulatneously in both time and frequency domain), as well higher order differentials of instantaneously velocities (jerks), etc.<br/>
+<br/>
+The variogram estimator was used for the estimation of Fractal Dimensions. Feedback to improve/smooth movements by localizing jerky movements in the time series, could also be given using HHT. The R programming language was used for computation.<br/>
+<br/>
+</p>
+<p align="justify" class="margined">
+(Advised by Prof. S N Omkar, Chief Research Scientist at the Computational Intelligence Lab, Department of Aerospace Engineering, Indian Institute of Science, Bangalore)
 </p>
 </font>
 </div>
