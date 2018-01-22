@@ -6,7 +6,7 @@ Item Response Theory (IRT) is a a method for testing and establishing the positi
 Central to IRT is the Item Response Function (IRF) which gives the probability that a person with a given ability level will answer correctly and is "learnt" from data. In three parameter logistic model (3PL), the probability of a correct response to a dichotomous item i is defined as:
 </p>
 <!--MATH>p_i(\theta) = c_i + \frac{1-c_i}{1+e^{-a_i(\theta - b_i)}}</MATH-->
-<center><img src="./nishanthprakash_files/irf_formula.svg" width="20%" style="margin:auto;display:inline-block;"></center>
+<center><img src="./nishanthprakash_files/irf_formula.svg" width="25%" style="margin:auto;display:inline-block;"></center>
 <p align="justify" class="margined">
 where &theta; indicates that the person abilities are modeled as a sample from a normal distribution for the purpose of estimating the item parameters. After the item parameters have been estimated, the abilities of individual person are estimated for reporting purposes. a, b, and c are the item parameters.<br/>
 <br/>
@@ -18,8 +18,7 @@ In brief, the parameters are interpreted as follows:
   <li>c – pseudo-guessing, chance, asymptotic minimum p(-&infin;)=c.</li>
 </ul>
 </p>
-<center><img src="./nishanthprakash_files/3PL_IRF.png" width="60%" style="margin:auto;display:inline-block;"></center><br/>
-<br/>
+<center><img src="./nishanthprakash_files/3PL_IRF.png" width="60%" style="margin:auto;display:inline-block;"></center>
 <p align="justify" class="margined">
 For this projected I explored the application of the 3PL IRT model for program analysis and programming skill assessment, using test case responses of programs as "item responses". In this context, the parameter 'b' can be thought of as describing if the test case is a corner test case or not, 'a' descibing the extent to which the test case can discriminate candidates of different abilities, and 'c' describing if a test case could hold without students having to code anything (stencil code satisfying the test case, for example)</p>
 </font>
