@@ -4,7 +4,7 @@
 
 In the context of Computer Science education, it is interesting to study how beginner students compose their computer programs plans for solving a problem involving multiple subtasks.<br/>
 <br/>
-Consider, for example, the classic data processing problem called the "Rainfall problem": students are given a list of numbers either refering to a date or to a rainfall measurements for a particular day, and are asked to develop a program that outputs average rainfall readings per day for a given month. Naturally, this problems involves subtasks such as parsing the numbers into dates or readings, filtering the readings with respect to a particular month and aggregating the readings into average readings.<br/>
+Consider, for example, the classic data processing problem called the "Rainfall problem": students are given a list of numbers either referring to a date or to a rainfall measurements for a particular day, and are asked to develop a program that outputs average rainfall readings per day for a given month. Naturally, this problem involves subtasks such as parsing the numbers into dates or readings, filtering the readings with respect to a particular month and aggregating the readings into average readings.<br/>
 <br/>
 The solutions to the subtasks of a problem can be composed in multiple different ways. One may choose, for example, to perform parsing, filtering, aggregating, etc. all in one traversal across the input list, or may choose to have all of these tasks separately solved across multiple traversals across the input list. This project deals with automated clustering (unsupervised) of student written computer programs with respect to the plans used in the programs.<br/>
 <br/>
